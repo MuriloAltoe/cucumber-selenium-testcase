@@ -1,11 +1,10 @@
-Feature: Login no site
-  Como um usuário registrado
-  Eu quero fazer login no site
-  Para acessar minha conta
+Feature: Acesso ao formulario
+  Verificar se o formulário:
+    Está recebendo informações do usuário
+    Está recebendo a solicitação de "submit"
 
 Scenario: Login com sucesso
-  Given que estou na página de login
-  When eu preencho o campo "username" com "meu_usuario"
-  And eu preencho o campo "password" com "minha_senha"
-  And eu clico no botão "Login"
-  Then eu devo ser redirecionado para a página inicial
+  Given Entrando na página de cadastroexemplo do próprio selenium
+  When Prenchendo o Textinput "my-text-id" com "texto :)"
+  And Clicando no botão "button"
+  Then Devo receber a mensagem "message"
